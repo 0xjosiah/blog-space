@@ -14,18 +14,21 @@ header {
     background: #005C97;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #363795, #005C97);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #363795, #005C97); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff;
     height: 3.5em;
     display: flex;
     align-items: center;
     padding-left: .5em;
-    color: #fff;
     letter-spacing: .1em;
+    position: fixed;
+    top: 0;
+    width: 100vw;
 }
 
 div {
     background-color: #fff;
     width: 90%;
-    max-width: 900px;
+    max-width: 800px;
     margin: 1em auto;
     border-radius: .5em;
     box-shadow: 0 0 10px 2px #bac0c5;
@@ -46,8 +49,18 @@ p {
     margin: 0;
 }
 
-input {
-    height: 10em;
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.create {
+    display: block;
+    margin-bottom: 1em;
+    font-family: 'Mukta', sans-serif;
+    padding: .3em;
+    width: 100%;
 }
 
 .submit-btn {
@@ -59,9 +72,20 @@ input {
     border: none;
     padding: .2em .9em;
     border-radius: .2em;
+    cursor: pointer;
+    border: .5px solid rgb(170, 170, 170);
+}
+
+.submit-btn:hover,
+.submit-btn:focus {
+    background: #005C97;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #363795, #005C97);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #363795, #005C97); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    box-shadow: 0 0 5px 1px #909192;
+    color: #fff;
 }
 
 .create-post {
     padding: 1em;
-    margin: 1.5em auto;
+    margin: 5em auto 1.5em;
 }

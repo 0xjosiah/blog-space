@@ -18,11 +18,13 @@
     <main>
         <section>
             <div class="create-post">
-                <form action="" method="post">
-                    <input type="text">
+                <form id="form" action="" method="post">
+                    <input id="new-blog-title" name="title" class="create" type="text" placeholder="Title" aria-label="blog post title input">
+                    <textarea class="create" name="body" id="new-blog-body" cols="50" rows="5" placeholder="Start writing..." aria-label="blog post body input"></textarea>
                     <button id="submit-btn" class="submit-btn">POST</button>
                 </form>
             </div>
+            <div></div>
         </section>
         <section class="recent-posts"></section>
     </main>
